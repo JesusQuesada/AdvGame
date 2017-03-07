@@ -55,6 +55,8 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/chevron-que-apunta-a-la-izquierda.png"))); // NOI18N
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton1.setContentAreaFilled(false);
         jButton1.setFocusable(false);
         jButton1.setPreferredSize(new java.awt.Dimension(60, 35));
         getContentPane().add(jButton1);
@@ -62,6 +64,9 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/chevron-flecha-hacia-arriba.png"))); // NOI18N
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton2.setContentAreaFilled(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.setFocusable(false);
         jButton2.setPreferredSize(new java.awt.Dimension(60, 35));
         getContentPane().add(jButton2);
@@ -69,6 +74,8 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(0, 0, 0));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/chevron-apuntando-hacia-la-derecha.png"))); // NOI18N
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton3.setContentAreaFilled(false);
         jButton3.setFocusable(false);
         jButton3.setMaximumSize(new java.awt.Dimension(60, 35));
         jButton3.setMinimumSize(new java.awt.Dimension(60, 35));
@@ -78,6 +85,8 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(0, 0, 0));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/flecha-chevron-hacia-abajo.png"))); // NOI18N
+        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton4.setContentAreaFilled(false);
         jButton4.setFocusable(false);
         jButton4.setPreferredSize(new java.awt.Dimension(60, 35));
         getContentPane().add(jButton4);
@@ -87,6 +96,8 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(153, 0, 51));
         jButton5.setText("Volver a dormir");
+        jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton5.setContentAreaFilled(false);
         jButton5.setFocusable(false);
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -94,48 +105,55 @@ public class ventanaGeneral extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5);
-        jButton5.setBounds(220, 620, 260, 30);
+        jButton5.setBounds(220, 620, 270, 30);
 
         jButton6.setBackground(new java.awt.Color(0, 0, 0));
         jButton6.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Usar");
+        jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton6.setContentAreaFilled(false);
         jButton6.setFocusable(false);
         getContentPane().add(jButton6);
-        jButton6.setBounds(385, 520, 100, 37);
+        jButton6.setBounds(390, 540, 100, 33);
 
         jButton7.setBackground(new java.awt.Color(0, 0, 0));
         jButton7.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setText("Examinar");
+        jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton7.setContentAreaFilled(false);
+        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton7.setFocusable(false);
         getContentPane().add(jButton7);
-        jButton7.setBounds(220, 520, 160, 37);
+        jButton7.setBounds(220, 540, 160, 33);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pssm_map05.jpg"))); // NOI18N
-        jLabel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(153, 153, 153), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 280, 470, 210);
+        jLabel3.setBounds(20, 300, 470, 210);
 
         jPanel1.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Traditional Arabic", 0, 12)); // NOI18N
-        jLabel2.setText("<html><p>Te internas en el bosque y te das cuenta de que\nes mucho más profundo de lo que creías. La luz\napenas es capaz de atravesar las frondosas ramas\nde los árboles. Hacia el Este ves un reflejo, quizá\nsea agua. Hacia el Oeste ves un pequeño camino\nque parece meterse entre los árboles. Hacia el Norte\nves otro camino y una señal en el suelo que dice ‘NO PASAR’.</p>\n<br></br>\n<p>1. Vas a inspeccionar el reflejo.</p> \n<p>2. Vas por el camino entre los árboles.</p> \n<p>3.Ignoras la señal del suelo y te diriges hacia el Norte.</p>");
+        jLabel2.setFont(new java.awt.Font("Traditional Arabic", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel2.setText("<html><p>Te internas en el bosque y te das cuenta de que es mucho más profundo de lo que creías. La luz apenas es capaz de atravesar las frondosas ramas de los árboles. Hacia el Este ves un reflejo, quizá sea agua. Hacia el Oeste ves un pequeño camino que parece meterse entre los árboles. Hacia el Norte ves otro camino y una señal en el suelo que dice ‘NO PASAR’.</p> <br></br> <p>1. Vas a inspeccionar el reflejo.</p>  <p>2. Vas por el camino entre los árboles.</p>  <p>3.Ignoras la señal del suelo y te diriges hacia el Norte.</p>");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(20, 20, 280, 200);
+        jLabel2.setBounds(10, 20, 290, 240);
         jLabel2.getAccessibleContext().setAccessibleName("Te internas en el bosque y te das cuenta de que \nes mucho más profundo de lo que creías. La luz \napenas es capaz de atravesar las frondosas ramas \nde los árboles. Hacia el Este ves un reflejo, quizá \nsea agua. Hacia el Oeste ves un pequeño camino \nque parece meterse entre los árboles. Hacia el Norte \nves otro camino y una señal en el suelo que dice ‘NO PASAR’.\n\n1. Vas a inspeccionar el reflejo. \n2. Vas por el camino entre los árboles. \n3.Ignoras la señal del suelo y te diriges hacia el Norte.");
         jLabel2.getAccessibleContext().setAccessibleDescription("");
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/papyrus.jpg"))); // NOI18N
         jLabel1.setLabelFor(jPanel1);
+        jLabel1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(153, 153, 153), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 51, 0))));
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 320, 230);
+        jLabel1.setBounds(0, 0, 310, 260);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(100, 20, 320, 230);
+        jPanel1.setBounds(100, 10, 310, 260);
         jPanel1.getAccessibleContext().setAccessibleDescription("");
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/backgroundgen_1.jpg"))); // NOI18N
