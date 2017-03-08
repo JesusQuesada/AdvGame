@@ -33,14 +33,16 @@ public class ventanaGeneral extends javax.swing.JFrame {
     private void initComponents() {
 
         jToggleButton1 = new javax.swing.JToggleButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jToggleButton2 = new javax.swing.JToggleButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -49,55 +51,16 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jToggleButton1.setText("jToggleButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(500, 720));
-        setPreferredSize(new java.awt.Dimension(520, 710));
+        setMaximumSize(new java.awt.Dimension(830, 775));
+        setPreferredSize(new java.awt.Dimension(830, 775));
         getContentPane().setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/chevron-que-apunta-a-la-izquierda.png"))); // NOI18N
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton1.setContentAreaFilled(false);
-        jButton1.setFocusable(false);
-        jButton1.setPreferredSize(new java.awt.Dimension(60, 35));
-        getContentPane().add(jButton1);
-        jButton1.setBounds(20, 560, 60, 35);
-
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/chevron-flecha-hacia-arriba.png"))); // NOI18N
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setFocusable(false);
-        jButton2.setPreferredSize(new java.awt.Dimension(60, 35));
-        getContentPane().add(jButton2);
-        jButton2.setBounds(80, 540, 60, 35);
-
-        jButton3.setBackground(new java.awt.Color(0, 0, 0));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/chevron-apuntando-hacia-la-derecha.png"))); // NOI18N
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton3.setContentAreaFilled(false);
-        jButton3.setFocusable(false);
-        jButton3.setMaximumSize(new java.awt.Dimension(60, 35));
-        jButton3.setMinimumSize(new java.awt.Dimension(60, 35));
-        jButton3.setPreferredSize(new java.awt.Dimension(60, 35));
-        getContentPane().add(jButton3);
-        jButton3.setBounds(140, 560, 60, 35);
-
-        jButton4.setBackground(new java.awt.Color(0, 0, 0));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/flecha-chevron-hacia-abajo.png"))); // NOI18N
-        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton4.setContentAreaFilled(false);
-        jButton4.setFocusable(false);
-        jButton4.setPreferredSize(new java.awt.Dimension(60, 35));
-        getContentPane().add(jButton4);
-        jButton4.setBounds(80, 580, 60, 35);
-
         jButton5.setBackground(new java.awt.Color(0, 0, 0));
-        jButton5.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(153, 0, 51));
         jButton5.setText("Volver a dormir");
         jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton5.setContentAreaFilled(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton5.setFocusable(false);
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -105,60 +68,134 @@ public class ventanaGeneral extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton5);
-        jButton5.setBounds(220, 620, 270, 30);
+        jButton5.setBounds(530, 700, 270, 30);
 
         jButton6.setBackground(new java.awt.Color(0, 0, 0));
-        jButton6.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Usar");
+        jButton6.setText("Te diriges al Oeste por el camino de la arboleda");
         jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton6.setContentAreaFilled(false);
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton6.setFocusable(false);
         getContentPane().add(jButton6);
-        jButton6.setBounds(390, 540, 100, 33);
+        jButton6.setBounds(20, 610, 460, 30);
 
         jButton7.setBackground(new java.awt.Color(0, 0, 0));
-        jButton7.setFont(new java.awt.Font("Traditional Arabic", 1, 18)); // NOI18N
+        jButton7.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Examinar");
+        jButton7.setText("Te diriges al Este a examinar el reflejo");
         jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton7.setContentAreaFilled(false);
         jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton7.setFocusable(false);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton7);
-        jButton7.setBounds(220, 540, 160, 33);
+        jButton7.setBounds(20, 570, 460, 30);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pssm_map05.jpg"))); // NOI18N
-        jLabel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(153, 153, 153), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton8.setBackground(new java.awt.Color(0, 0, 0));
+        jButton8.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("Ignoras la señal y te diriges al Norte");
+        jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton8.setFocusable(false);
+        getContentPane().add(jButton8);
+        jButton8.setBounds(20, 650, 460, 33);
+
+        jLabel3.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Inventario");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 300, 470, 210);
+        jLabel3.setBounds(610, 580, 180, 20);
+
+        jToggleButton2.setBackground(new java.awt.Color(0, 0, 0));
+        jToggleButton2.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
+        jToggleButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jToggleButton2.setText("FX Off");
+        jToggleButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jToggleButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jToggleButton2.setFocusable(false);
+        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jToggleButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jToggleButton2);
+        jToggleButton2.setBounds(725, 13, 80, 30);
+
+        jScrollPane2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jScrollPane2.setAutoscrolls(true);
+
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Andalus", 0, 18)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setRows(3);
+        jTextArea1.setTabSize(5);
+        jTextArea1.setText("Examinas el cuerpo y encuentras un hacha.");
+        jTextArea1.setWrapStyleWord(true);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(20, 460, 460, 100);
+
+        jScrollPane1.setBackground(new java.awt.Color(0, 0, 0));
+        jScrollPane1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        jScrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane1.setFocusable(false);
+        jScrollPane1.setFont(new java.awt.Font("Andalus", 0, 11)); // NOI18N
+
+        jList1.setBackground(new java.awt.Color(0, 0, 0));
+        jList1.setFont(new java.awt.Font("Andalus", 1, 11)); // NOI18N
+        jList1.setForeground(new java.awt.Color(255, 255, 255));
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Hacha", "Piedra", "Antorcha", "Mapa", "Cuerda" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jList1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jList1.setToolTipText("Inventario");
+        jList1.setFocusable(false);
+        jList1.setOpaque(false);
+        jList1.setSelectionBackground(new java.awt.Color(102, 51, 0));
+        jList1.setSelectionForeground(new java.awt.Color(204, 204, 204));
+        jScrollPane1.setViewportView(jList1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(610, 600, 190, 80);
 
         jPanel1.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Traditional Arabic", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel2.setText("<html><p>Te internas en el bosque y te das cuenta de que es mucho más profundo de lo que creías. La luz apenas es capaz de atravesar las frondosas ramas de los árboles. Hacia el Este ves un reflejo, quizá sea agua. Hacia el Oeste ves un pequeño camino que parece meterse entre los árboles. Hacia el Norte ves otro camino y una señal en el suelo que dice ‘NO PASAR’.</p> <br></br> <p>1. Vas a inspeccionar el reflejo.</p>  <p>2. Vas por el camino entre los árboles.</p>  <p>3.Ignoras la señal del suelo y te diriges hacia el Norte.</p>");
+        jLabel2.setFont(new java.awt.Font("Andalus", 1, 24)); // NOI18N
+        jLabel2.setText("<html><p>Te internas en el bosque y te das cuenta de que es mucho más profundo de lo que creías. \nLa luz apenas es capaz de atravesar las frondosas ramas de los árboles. Hacia el Este ves un reflejo, \nquizá sea agua. Hacia el Oeste ves un pequeño camino que parece meterse entre los árboles. Hacia\nel Norte ves otro camino y una señal en el suelo que dice ‘NO PASAR’.</p>");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(10, 20, 290, 240);
+        jLabel2.setBounds(10, 10, 440, 420);
         jLabel2.getAccessibleContext().setAccessibleName("Te internas en el bosque y te das cuenta de que \nes mucho más profundo de lo que creías. La luz \napenas es capaz de atravesar las frondosas ramas \nde los árboles. Hacia el Este ves un reflejo, quizá \nsea agua. Hacia el Oeste ves un pequeño camino \nque parece meterse entre los árboles. Hacia el Norte \nves otro camino y una señal en el suelo que dice ‘NO PASAR’.\n\n1. Vas a inspeccionar el reflejo. \n2. Vas por el camino entre los árboles. \n3.Ignoras la señal del suelo y te diriges hacia el Norte.");
         jLabel2.getAccessibleContext().setAccessibleDescription("");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/papyrus.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/papyrus2.jpg"))); // NOI18N
         jLabel1.setLabelFor(jPanel1);
         jLabel1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(102, 102, 102), new java.awt.Color(153, 153, 153), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)), javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 51, 0))));
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 310, 260);
+        jLabel1.setBounds(0, 0, 460, 440);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(100, 10, 310, 260);
+        jPanel1.setBounds(20, 10, 460, 440);
         jPanel1.getAccessibleContext().setAccessibleDescription("");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/backgroundgen_1.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/background.jpg"))); // NOI18N
+        jLabel4.setFocusable(false);
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(-110, -20, 630, 690);
+        jLabel4.setBounds(-110, -20, 930, 770);
 
         getAccessibleContext().setAccessibleDescription("");
 
@@ -172,6 +209,14 @@ public class ventanaGeneral extends javax.swing.JFrame {
             
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,18 +254,20 @@ public class ventanaGeneral extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButton2;
     // End of variables declaration//GEN-END:variables
 }
