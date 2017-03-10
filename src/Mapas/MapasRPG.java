@@ -5,37 +5,32 @@
  */
 package Mapas;
 
+import Ventanas.ventanaGeneral;
 import java.util.Scanner;
-
+import javax.swing.JLabel;
+import 
 /**
  *
  * @author JesusQuesada
  */
 public class MapasRPG {
-    int direccion;
-    int nSector,nEventoAgresion, nEvento;
+
+    ventanaGeneral gen = new ventanaGeneral();
+    JLabel text = new JLabel();
+   
+    int nSector,nEvento;
     Scanner sc = new Scanner(System.in);
 
     public MapasRPG() {
     }
 
-    public MapasRPG(int direccion, int nSector, int nEventoAgresion, int nEvento) {
-        this.direccion = direccion;
+    public MapasRPG(int nSector, int nEvento) {
         this.nSector = nSector;
-        this.nEventoAgresion = nEventoAgresion;
         this.nEvento = nEvento;
-    }
-
-    public int getDireccion() {
-        return direccion;
     }
 
     public int getnSector() {
         return nSector;
-    }
-
-    public int getnEventoAgresion() {
-        return nEventoAgresion;
     }
 
     public int getnEvento() {
@@ -46,16 +41,8 @@ public class MapasRPG {
         return sc;
     }
 
-    public void setDireccion(int direccion) {
-        this.direccion = direccion;
-    }
-
     public void setnSector(int nSector) {
         this.nSector = nSector;
-    }
-
-    public void setnEventoAgresion(int nEventoAgresion) {
-        this.nEventoAgresion = nEventoAgresion;
     }
 
     public void setnEvento(int nEvento) {
@@ -65,13 +52,5 @@ public class MapasRPG {
     public void setSc(Scanner sc) {
         this.sc = sc;
     }
-    
-    
-    
-    public  void comprobarCardinales(String direccion){
-        
-    
 
-    }
-    
 }

@@ -5,7 +5,8 @@
  */
 package Ventanas;
 
-import Mapas.Bosque;
+import Mapas.BosqueInicio;
+import javax.swing.JLabel;
 
 /**
  *
@@ -13,7 +14,7 @@ import Mapas.Bosque;
  * @author jquesadaabeijon
  */
 public class ventanaGeneral extends javax.swing.JFrame {
-    Bosque forest = new Bosque();
+    BosqueInicio forest = new BosqueInicio();
     
     
     /**
@@ -34,9 +35,9 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         jToggleButton1 = new javax.swing.JToggleButton();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        Action2 = new javax.swing.JButton();
+        Action1 = new javax.swing.JButton();
+        Action3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jToggleButton2 = new javax.swing.JToggleButton();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -44,7 +45,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        history = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
@@ -56,7 +57,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jButton5.setBackground(new java.awt.Color(0, 0, 0));
-        jButton5.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
+        jButton5.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(153, 0, 51));
         jButton5.setText("Volver a dormir");
         jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
@@ -70,42 +71,42 @@ public class ventanaGeneral extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(530, 700, 270, 30);
 
-        jButton6.setBackground(new java.awt.Color(0, 0, 0));
-        jButton6.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Te diriges al Oeste por el camino de la arboleda");
-        jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton6.setFocusable(false);
-        getContentPane().add(jButton6);
-        jButton6.setBounds(20, 610, 460, 30);
+        Action2.setBackground(new java.awt.Color(0, 0, 0));
+        Action2.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
+        Action2.setForeground(new java.awt.Color(255, 255, 255));
+        Action2.setText("Te diriges al Oeste por el camino de la arboleda");
+        Action2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        Action2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Action2.setFocusable(false);
+        getContentPane().add(Action2);
+        Action2.setBounds(20, 610, 460, 30);
 
-        jButton7.setBackground(new java.awt.Color(0, 0, 0));
-        jButton7.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Te diriges al Este a examinar el reflejo");
-        jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton7.setFocusable(false);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        Action1.setBackground(new java.awt.Color(0, 0, 0));
+        Action1.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
+        Action1.setForeground(new java.awt.Color(255, 255, 255));
+        Action1.setText("Te diriges al Este a examinar el reflejo");
+        Action1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        Action1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Action1.setFocusable(false);
+        Action1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                Action1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton7);
-        jButton7.setBounds(20, 570, 460, 30);
+        getContentPane().add(Action1);
+        Action1.setBounds(20, 570, 460, 30);
 
-        jButton8.setBackground(new java.awt.Color(0, 0, 0));
-        jButton8.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Ignoras la señal y te diriges al Norte");
-        jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        jButton8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton8.setFocusable(false);
-        getContentPane().add(jButton8);
-        jButton8.setBounds(20, 650, 460, 33);
+        Action3.setBackground(new java.awt.Color(0, 0, 0));
+        Action3.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
+        Action3.setForeground(new java.awt.Color(255, 255, 255));
+        Action3.setText("Ignoras la señal y te diriges al Norte");
+        Action3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        Action3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Action3.setFocusable(false);
+        getContentPane().add(Action3);
+        Action3.setBounds(20, 650, 460, 26);
 
-        jLabel3.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Inventario");
@@ -113,7 +114,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jLabel3.setBounds(610, 580, 180, 20);
 
         jToggleButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jToggleButton2.setFont(new java.awt.Font("Andalus", 1, 18)); // NOI18N
+        jToggleButton2.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
         jToggleButton2.setForeground(new java.awt.Color(255, 255, 255));
         jToggleButton2.setText("FX Off");
         jToggleButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
@@ -134,7 +135,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Andalus", 0, 18)); // NOI18N
+        jTextArea1.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
         jTextArea1.setRows(3);
         jTextArea1.setTabSize(5);
@@ -152,7 +153,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jScrollPane1.setFont(new java.awt.Font("Andalus", 0, 11)); // NOI18N
 
         jList1.setBackground(new java.awt.Color(0, 0, 0));
-        jList1.setFont(new java.awt.Font("Andalus", 1, 11)); // NOI18N
+        jList1.setFont(new java.awt.Font("URW Bookman L", 1, 12)); // NOI18N
         jList1.setForeground(new java.awt.Color(255, 255, 255));
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Hacha", "Piedra", "Antorcha", "Mapa", "Cuerda" };
@@ -172,15 +173,22 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Andalus", 1, 24)); // NOI18N
-        jLabel2.setText("<html><p>Te internas en el bosque y te das cuenta de que es mucho más profundo de lo que creías. \nLa luz apenas es capaz de atravesar las frondosas ramas de los árboles. Hacia el Este ves un reflejo, \nquizá sea agua. Hacia el Oeste ves un pequeño camino que parece meterse entre los árboles. Hacia\nel Norte ves otro camino y una señal en el suelo que dice ‘NO PASAR’.</p>");
-        jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
-        jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(10, 10, 440, 420);
-        jLabel2.getAccessibleContext().setAccessibleName("Te internas en el bosque y te das cuenta de que \nes mucho más profundo de lo que creías. La luz \napenas es capaz de atravesar las frondosas ramas \nde los árboles. Hacia el Este ves un reflejo, quizá \nsea agua. Hacia el Oeste ves un pequeño camino \nque parece meterse entre los árboles. Hacia el Norte \nves otro camino y una señal en el suelo que dice ‘NO PASAR’.\n\n1. Vas a inspeccionar el reflejo. \n2. Vas por el camino entre los árboles. \n3.Ignoras la señal del suelo y te diriges hacia el Norte.");
-        jLabel2.getAccessibleContext().setAccessibleDescription("");
+        history.setFont(new java.awt.Font("URW Bookman L", 0, 24)); // NOI18N
+        history.setText("<html><p>Te internas en el bosque y te das cuenta de que es mucho más profundo de lo que creías. \nLa luz apenas es capaz de atravesar las frondosas ramas de los árboles. Hacia el Este ves un reflejo, \nquizá sea agua. Hacia el Oeste ves un pequeño camino que parece meterse entre los árboles. Hacia\nel Norte ves otro camino y una señal en el suelo que dice ‘NO PASAR’.</p>");
+        history.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        history.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        history.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        history.addInputMethodListener(new java.awt.event.InputMethodListener() {
+            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
+                historyInputMethodTextChanged(evt);
+            }
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+            }
+        });
+        jPanel1.add(history);
+        history.setBounds(10, 10, 440, 420);
+        history.getAccessibleContext().setAccessibleName("Te internas en el bosque y te das cuenta de que \nes mucho más profundo de lo que creías. La luz \napenas es capaz de atravesar las frondosas ramas \nde los árboles. Hacia el Este ves un reflejo, quizá \nsea agua. Hacia el Oeste ves un pequeño camino \nque parece meterse entre los árboles. Hacia el Norte \nves otro camino y una señal en el suelo que dice ‘NO PASAR’.\n\n1. Vas a inspeccionar el reflejo. \n2. Vas por el camino entre los árboles. \n3.Ignoras la señal del suelo y te diriges hacia el Norte.");
+        history.getAccessibleContext().setAccessibleDescription("");
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/papyrus2.jpg"))); // NOI18N
         jLabel1.setLabelFor(jPanel1);
@@ -210,13 +218,17 @@ public class ventanaGeneral extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5MouseClicked
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void Action1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Action1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_Action1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jToggleButton2ActionPerformed
+
+    private void historyInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_historyInputMethodTextChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_historyInputMethodTextChanged
 
     /**
      * @param args the command line arguments
@@ -253,13 +265,17 @@ public class ventanaGeneral extends javax.swing.JFrame {
         });
     }
 
+    public void setHistory(JLabel history) {
+        this.history = history;
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Action1;
+    private javax.swing.JButton Action2;
+    private javax.swing.JButton Action3;
+    private javax.swing.JLabel history;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JList<String> jList1;
