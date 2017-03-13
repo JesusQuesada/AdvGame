@@ -9,17 +9,66 @@ package Mapas;
  *
  * @author JesusQuesada
  */
-public class BosqueInicio extends MapasRPG {
+public class Lago extends MapasRPG {
     
-    
-
-    public void startSector() {
-
-        sector1();
-
+    public void sector2(){
+        
+        /*<html><p>El manantial parece tener un objeto en el fondo. A su lado ves un camino.</p></html>
+        
+        Te zambulles en el agua (sector5());
+        Intentas alcanzarlo con una rama (sector6());
+        Sigues por el camino (sector7());
+        */
     }
     
-    public void sector1(){
+    public void sector5(){
+        
+        /*<html><p>Te zambulles en el agua y cuando estás a punto de alcanzar el objeto, algo te agarra la pierna y tira de ti. Intentas escapar pero no lo consigues y cada vez tienes menos fuerzas. No puedes aguantar la respiración más tiempo y decides dejar de resistirte y afrontar tu destino.</p><br></br><p>FIN</p></html>*/
+    }
+    
+    public void sector6(){
+        /*<html><p>Con la ayuda de una rama consigues acercar el objeto lo suficiente para cogerlo con la mano pero al introducirla en el agua, sientes que algo te agarra. Cuando consigues soltarte unos tentáculos emergen y te atacan</p></html>
+        
+        Huyes (sector13());
+        Luchas (sector14());
+        
+        Recoges una llave
+        */
+    }
+    
+    public void sector7(){
+        /*<html><p>El camino te lleva de vuelta a la entrada del bosque.</p></html>
+        
+        Vuelves (m1.sector1());
+        */
+    }
+    
+    public void sector13(){
+        /*<html><p>Te giras y comienzas a correr pero te tropiezas con la rama que utilizaste y caes al suelo. Un tentáculo te agarra la pierna y te arrastra dentro del lago. Te ahogas antes de ser devorado por la bestia.</p><br></br><p>FIN</p></html>*/
+    }
+    
+    public void sector14(){
+        /*<html><p>Desenvainas tu espada y con un movimiento certero consigues cortar uno de los tentáculos. El resto vuelven a sumergirse en el lago y te planteas que hacer.</p></html>
+        
+        Te acercas con la intención de rematarla (sector21());
+        Te marchas (sector22());
+        */
+    }
+    
+    public void sector21(){
+        /*<html><p>Te acercas al lago espada en mano y de repente el monstruo emerge mostrando toda su magnitud. Los tentáculos iniciales no eran más que unas pequeñas extremidades delanteras. El tamaño total es descomunal y te das cuenta que frente a algo así lo único que puedes hacer es bajar tu espada y esperar una muerte rápida</p><br></br><p>FIN</p></html>*/
+    }
+    
+    public void sector22(){
+        /*<html><p>Finalmente decides no tentar a la suerte y te marchas.</p></html>
+        
+        Te diriges a la hoguera (m3.sector3());
+        Te diriges a la cabaña (m4.sector4());
+        */
+    }
+    
+    /*A PARTIR DE AQUI NO SIRVE*/
+        
         
 //        gen.setHistory(text.setText("fasdfsdf"));
         
@@ -213,4 +262,4 @@ public class BosqueInicio extends MapasRPG {
 //
 //    }
 
-}
+

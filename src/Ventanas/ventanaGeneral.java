@@ -5,7 +5,7 @@
  */
 package Ventanas;
 
-import Mapas.BosqueInicio;
+import Mapas.Lago;
 import javax.swing.JLabel;
 
 /**
@@ -14,7 +14,7 @@ import javax.swing.JLabel;
  * @author jquesadaabeijon
  */
 public class ventanaGeneral extends javax.swing.JFrame {
-    BosqueInicio forest = new BosqueInicio();
+    Lago forest = new Lago();
     
     
     /**
