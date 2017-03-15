@@ -11,6 +11,8 @@ package Mapas;
  */
 public class Lago extends MapasRPG {
     
+    
+    
     public void sector2(){
         
         /*<html><p>El manantial parece tener un objeto en el fondo. A su lado ves un camino.</p></html>

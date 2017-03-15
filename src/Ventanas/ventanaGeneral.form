@@ -381,6 +381,9 @@
           <Events>
             <EventHandler event="inputMethodTextChanged" listener="java.awt.event.InputMethodListener" parameters="java.awt.event.InputMethodEvent" handler="historyInputMethodTextChanged"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="ventanaGeneral_history"/>
+          </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="10" y="10" width="440" height="420"/>
