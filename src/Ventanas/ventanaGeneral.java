@@ -15,14 +15,13 @@ import javax.swing.JLabel;
  * @author jquesadaabeijon
  */
 public class ventanaGeneral extends javax.swing.JFrame {
-    Lago forest = new Lago();
-    Mapas.MapasRPG map = new MapasRPG();
     
     /**
      * Creates new form ventanaGeneral
      */
     public ventanaGeneral() {
         initComponents();
+        iniciar();
     }
 
     /**
@@ -36,15 +35,15 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         jToggleButton1 = new javax.swing.JToggleButton();
         jButton5 = new javax.swing.JButton();
-        Action2 = new javax.swing.JButton();
-        Action1 = new javax.swing.JButton();
-        Action3 = new javax.swing.JButton();
+        action2 = new javax.swing.JButton();
+        action1 = new javax.swing.JButton();
+        action3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jToggleButton2 = new javax.swing.JToggleButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         description = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        jList1 = new javax.swing.JList<String>();
         jPanel1 = new javax.swing.JPanel();
         history = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -72,40 +71,51 @@ public class ventanaGeneral extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(530, 700, 270, 30);
 
-        Action2.setBackground(new java.awt.Color(0, 0, 0));
-        Action2.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
-        Action2.setForeground(new java.awt.Color(255, 255, 255));
-        Action2.setText(map.maps[1][0]);
-        Action2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        Action2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Action2.setFocusable(false);
-        getContentPane().add(Action2);
-        Action2.setBounds(20, 610, 460, 30);
-
-        Action1.setBackground(new java.awt.Color(0, 0, 0));
-        Action1.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
-        Action1.setForeground(new java.awt.Color(255, 255, 255));
-        Action1.setText(map.maps[0][1]);
-        Action1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        Action1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Action1.setFocusable(false);
-        Action1.addActionListener(new java.awt.event.ActionListener() {
+        action2.setBackground(new java.awt.Color(0, 0, 0));
+        action2.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
+        action2.setForeground(new java.awt.Color(255, 255, 255));
+        action2.setText(map.maps[1][0]);
+        action2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        action2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        action2.setFocusable(false);
+        action2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Action1ActionPerformed(evt);
+                action2ActionPerformed(evt);
             }
         });
-        getContentPane().add(Action1);
-        Action1.setBounds(20, 570, 460, 30);
+        getContentPane().add(action2);
+        action2.setBounds(20, 610, 460, 30);
 
-        Action3.setBackground(new java.awt.Color(0, 0, 0));
-        Action3.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
-        Action3.setForeground(new java.awt.Color(255, 255, 255));
-        Action3.setText(map.maps[1][1]);
-        Action3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
-        Action3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Action3.setFocusable(false);
-        getContentPane().add(Action3);
-        Action3.setBounds(20, 650, 460, 26);
+        action1.setBackground(new java.awt.Color(0, 0, 0));
+        action1.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
+        action1.setForeground(new java.awt.Color(255, 255, 255));
+        action1.setText(map.maps[0][1]);
+        action1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        action1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        action1.setFocusable(false);
+        action1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                action1ActionPerformed(evt);
+                action1ActionPerformed2(evt);
+            }
+        });
+        getContentPane().add(action1);
+        action1.setBounds(20, 570, 460, 30);
+
+        action3.setBackground(new java.awt.Color(0, 0, 0));
+        action3.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
+        action3.setForeground(new java.awt.Color(255, 255, 255));
+        action3.setText(map.maps[1][1]);
+        action3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
+        action3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        action3.setFocusable(false);
+        action3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                action3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(action3);
+        action3.setBounds(20, 650, 460, 29);
 
         jLabel3.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -121,11 +131,6 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jToggleButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
         jToggleButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jToggleButton2.setFocusable(false);
-        jToggleButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jToggleButton2ActionPerformed(evt);
-            }
-        });
         getContentPane().add(jToggleButton2);
         jToggleButton2.setBounds(725, 13, 80, 30);
 
@@ -155,10 +160,10 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jList1.setBackground(new java.awt.Color(0, 0, 0));
         jList1.setFont(new java.awt.Font("URW Bookman L", 1, 12)); // NOI18N
         jList1.setForeground(new java.awt.Color(255, 255, 255));
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        jList1.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "Hacha", "Piedra", "Antorcha", "Mapa", "Cuerda" };
             public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
+            public Object getElementAt(int i) { return strings[i]; }
         });
         jList1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jList1.setToolTipText("Inventario");
@@ -178,13 +183,6 @@ public class ventanaGeneral extends javax.swing.JFrame {
         history.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         history.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         history.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        history.addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
-                historyInputMethodTextChanged(evt);
-            }
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-            }
-        });
         jPanel1.add(history);
         history.setBounds(10, 10, 440, 420);
         history.getAccessibleContext().setAccessibleName("Te internas en el bosque y te das cuenta de que \nes mucho más profundo de lo que creías. La luz \napenas es capaz de atravesar las frondosas ramas \nde los árboles. Hacia el Este ves un reflejo, quizá \nsea agua. Hacia el Oeste ves un pequeño camino \nque parece meterse entre los árboles. Hacia el Norte \nves otro camino y una señal en el suelo que dice ‘NO PASAR’.\n\n1. Vas a inspeccionar el reflejo. \n2. Vas por el camino entre los árboles. \n3.Ignoras la señal del suelo y te diriges hacia el Norte.");
@@ -209,7 +207,17 @@ public class ventanaGeneral extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    Mapas.MapasRPG map = new MapasRPG();
+    
+    private void iniciar(){
+        map.cargarJuego();
+        history.setText(String.valueOf(map.maps[0][0]));
+        action1.setText(String.valueOf(map.maps[0][1]));
+        action2.setText(String.valueOf(map.maps[1][0]));
+        action3.setText(String.valueOf(map.maps[1][1]));
+        
+    }
+    
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
         partida_Guardada recuerdos = new partida_Guardada();
         recuerdos.setVisible(true);
@@ -219,18 +227,40 @@ public class ventanaGeneral extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5MouseClicked
 
-    private void Action1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Action1ActionPerformed
+    private void action1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_action1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Action1ActionPerformed
-
-    private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton2ActionPerformed
-
-    private void historyInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_historyInputMethodTextChanged
+        if (action1.getText().equals(String.valueOf(map.maps[0][1])))
+            history.setText(String.valueOf(map.maps[2][0]));
+            action1.setText(String.valueOf(map.maps[2][1]));
+            action2.setText(String.valueOf(map.maps[1][2]));
+            action3.setText(String.valueOf(map.maps[2][2]));
+            
         
+    }//GEN-LAST:event_action1ActionPerformed
+
+    private void action2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_action2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_historyInputMethodTextChanged
+        if (action2.getText().equals(String.valueOf(map.maps[1][0])))
+            history.setText(String.valueOf(map.maps[3][0]));
+            action1.setText(String.valueOf(map.maps[3][1]));
+            action2.setText(String.valueOf(map.maps[1][3]));
+            action3.setText(String.valueOf(map.maps[3][3]));
+    }//GEN-LAST:event_action2ActionPerformed
+
+    private void action3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_action3ActionPerformed
+        // TODO add your handling code here:
+        if (action1.getText().equals(String.valueOf(map.maps[1][1])))
+            history.setText(String.valueOf(map.maps[4][0]));
+            action1.setText(String.valueOf(map.maps[4][1]));
+            action2.setText(String.valueOf(map.maps[1][4]));
+            action3.setText(String.valueOf(map.maps[4][4]));
+    }//GEN-LAST:event_action3ActionPerformed
+
+    private void action1ActionPerformed2(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_action1ActionPerformed2
+        // TODO add your handling code here:
+        if (action1.getText().equals(String.valueOf(map.maps[2][1])));
+            history.setText(String.valueOf(map.maps[5][0]));
+    }//GEN-LAST:event_action1ActionPerformed2
 
     /**
      * @param args the command line arguments
@@ -272,9 +302,9 @@ public class ventanaGeneral extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Action1;
-    private javax.swing.JButton Action2;
-    private javax.swing.JButton Action3;
+    private javax.swing.JButton action1;
+    private javax.swing.JButton action2;
+    private javax.swing.JButton action3;
     private javax.swing.JTextArea description;
     private javax.swing.JLabel history;
     private javax.swing.JButton jButton5;
