@@ -6,6 +6,7 @@
 package Ventanas;
 
 import Mapas.Lago;
+import Mapas.MapasRPG;
 import javax.swing.JLabel;
 
 /**
@@ -15,7 +16,7 @@ import javax.swing.JLabel;
  */
 public class ventanaGeneral extends javax.swing.JFrame {
     Lago forest = new Lago();
-    
+    Mapas.MapasRPG map = new MapasRPG();
     
     /**
      * Creates new form ventanaGeneral
@@ -41,7 +42,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jToggleButton2 = new javax.swing.JToggleButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        description = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
         jPanel1 = new javax.swing.JPanel();
@@ -74,7 +75,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         Action2.setBackground(new java.awt.Color(0, 0, 0));
         Action2.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
         Action2.setForeground(new java.awt.Color(255, 255, 255));
-        Action2.setText("Te diriges al Oeste por el camino de la arboleda");
+        Action2.setText(map.maps[1][0]);
         Action2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
         Action2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Action2.setFocusable(false);
@@ -84,7 +85,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         Action1.setBackground(new java.awt.Color(0, 0, 0));
         Action1.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
         Action1.setForeground(new java.awt.Color(255, 255, 255));
-        Action1.setText("Te diriges al Este a examinar el reflejo");
+        Action1.setText(map.maps[0][1]);
         Action1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
         Action1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Action1.setFocusable(false);
@@ -99,7 +100,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         Action3.setBackground(new java.awt.Color(0, 0, 0));
         Action3.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
         Action3.setForeground(new java.awt.Color(255, 255, 255));
-        Action3.setText("Ignoras la señal y te diriges al Norte");
+        Action3.setText(map.maps[1][1]);
         Action3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 153, 153), new java.awt.Color(204, 204, 204), new java.awt.Color(153, 51, 0), new java.awt.Color(102, 51, 0)));
         Action3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Action3.setFocusable(false);
@@ -133,15 +134,14 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
         jScrollPane2.setAutoscrolls(true);
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
-        jTextArea1.setForeground(new java.awt.Color(255, 255, 255));
-        jTextArea1.setRows(3);
-        jTextArea1.setTabSize(5);
-        jTextArea1.setText("Examinas el cuerpo y encuentras un hacha.");
-        jTextArea1.setWrapStyleWord(true);
-        jScrollPane2.setViewportView(jTextArea1);
+        description.setBackground(new java.awt.Color(0, 0, 0));
+        description.setColumns(20);
+        description.setFont(new java.awt.Font("URW Bookman L", 0, 18)); // NOI18N
+        description.setForeground(new java.awt.Color(255, 255, 255));
+        description.setRows(3);
+        description.setTabSize(5);
+        description.setWrapStyleWord(true);
+        jScrollPane2.setViewportView(description);
 
         getContentPane().add(jScrollPane2);
         jScrollPane2.setBounds(20, 460, 460, 100);
@@ -174,7 +174,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         history.setFont(new java.awt.Font("URW Bookman L", 0, 24)); // NOI18N
-        history.setText("<html><p>Te internas en el bosque y te das cuenta de que es mucho más profundo de lo que creías. \nLa luz apenas es capaz de atravesar las frondosas ramas de los árboles. Hacia el Este ves un reflejo, \nquizá sea agua. Hacia el Oeste ves un pequeño camino que parece meterse entre los árboles. Hacia\nel Norte ves otro camino y una señal en el suelo que dice ‘NO PASAR’.</p>");
+        history.setText(map.maps[0][0]);
         history.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         history.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         history.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
@@ -214,6 +214,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
         partida_Guardada recuerdos = new partida_Guardada();
         recuerdos.setVisible(true);
         this.dispose();    
+        
             
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5MouseClicked
@@ -227,6 +228,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void historyInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_historyInputMethodTextChanged
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_historyInputMethodTextChanged
 
@@ -273,6 +275,7 @@ public class ventanaGeneral extends javax.swing.JFrame {
     private javax.swing.JButton Action1;
     private javax.swing.JButton Action2;
     private javax.swing.JButton Action3;
+    private javax.swing.JTextArea description;
     private javax.swing.JLabel history;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
@@ -282,7 +285,6 @@ public class ventanaGeneral extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
     // End of variables declaration//GEN-END:variables
