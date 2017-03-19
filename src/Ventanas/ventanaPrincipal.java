@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Ventanas;
-
+import LibreriaSonido.*;
 /**
  *
  * @author dalvarezruiz
@@ -44,6 +44,11 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.setFocusable(false);
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         getContentPane().add(jButton1);
         jButton1.setBounds(160, 270, 130, 40);
 
@@ -97,7 +102,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         ventanaGeneral general = new ventanaGeneral();
         general.show();
         general.setVisible(true);
-        this.dispose();        
+        this.setVisible(false);      
         
     }//GEN-LAST:event_jButton3MouseClicked
 
@@ -109,6 +114,14 @@ public class ventanaPrincipal extends javax.swing.JFrame {
         System.exit(0);
 
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+
+           Ficheros.SelectorArchivos select = new Ficheros.SelectorArchivos();
+           select.setVisible(true);
+           this.setVisible(false);
+
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments

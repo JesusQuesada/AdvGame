@@ -6,7 +6,7 @@
 package rpg;
 
 import Ventanas.ventanaPrincipal;
-
+import LibreriaSonido.Sonido;
 /**
  *
  * @author dalvarezruiz
@@ -20,6 +20,9 @@ public class RPG {
         // TODO code application logic here
         Ventanas.ventanaPrincipal inicio = new ventanaPrincipal();
         inicio.setVisible(true);
+        Sonido sound = new Sonido();
+        sound.playAudio("/Audio/sound.wav");
+        
         
     }
     
